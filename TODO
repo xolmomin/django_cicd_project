@@ -2,5 +2,3 @@ ssh-key generate qilish
 
 ssh-keygen -t rsa -b 4096 -C "test@gmail.com"
 
-
-
