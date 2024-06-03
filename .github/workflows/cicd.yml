@@ -16,6 +16,6 @@ jobs:
         username: root
         password: ${{ secrets.PASSWORD }}
         script: |
-          echo 'hello'
-          touch test.txt
+          cd /var/www/tasks_cicd/project1/backend
+          git pull
           whoami

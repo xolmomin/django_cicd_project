@@ -1,0 +1,10 @@
+[Unit]
+Description=Django CI/CD project daemon
+After=network.target
+
+[Service]
+WorkingDirectory=/var/www/tasks_cicd/project1/backend
+ExecStart=/var/www/tasks_cicd/project1/backend/.venv/bin/gunicorn --workers 1 --bind unix:/var/www/tasks_cicd/project1/backend/backend.sock root.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
