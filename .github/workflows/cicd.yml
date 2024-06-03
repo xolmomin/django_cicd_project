@@ -14,7 +14,7 @@ jobs:
       with:
         host: 146.190.85.59
         username: root
-        key: ${{ secrets.BOTIR_KEY }}
+        key: ${{ secrets.KEY }}
         script: |
           echo 'hello'
           touch test.txt
