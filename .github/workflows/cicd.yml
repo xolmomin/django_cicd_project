@@ -18,4 +18,7 @@ jobs:
         script: |
           cd /var/www/tasks_cicd/project1/backend
           git pull
+          systemctl restart gunicorn.service
+          systemctl reload nginx.service
+          
           whoami
