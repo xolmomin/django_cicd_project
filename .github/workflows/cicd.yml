@@ -1,0 +1,21 @@
+name: Django CI/CD Deployment
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using ssh-key
+      uses: appleboy/ssh-action@v0.1.10
+      with:
+        host: 146.190.85.59
+        username: root
+        key: ${{ secrets.BOTIR_KEY }}
+        script: |
+          echo 'hello'
+          touch test.txt
+          whoami
