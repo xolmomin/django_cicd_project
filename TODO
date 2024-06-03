@@ -14,5 +14,6 @@ script: |
   touch test.txt
   whoami
 
+change token
 
 github-token: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
