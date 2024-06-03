@@ -16,4 +16,21 @@ script: |
 
 change token
 
-github-token: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
+
+
+
+/var/www/
+
+
+1martalik job
+git clone
+.venv
+nginx.conf
+.service
+
+
+git pull
+pip3 install req.txt
+restart service, nginx
+
+
