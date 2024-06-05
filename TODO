@@ -1,11 +1,25 @@
+1.
+projectni github dan yuklab olamiz
+public project bolsa - git clone https:// project_papka
+private project bolsa - git config qilish kk
+git config qilish uchun
+
+
 ssh-key generate qilish
 
 ssh-keygen -t rsa -b 4096 -C "test@gmail.com"
+generate qilganimizdan keyin 2ta fayl yaratiladi, manzili (/root/.ssh/id_rsa)
+id_rsa.pub - bu public key
+id_rsa     - bu secret key
 
-ssh-keygen -t ed25519 -a 200 -C "your_email@example.com"
 
-/etc/nginx/sites-enabled (nginx)
-/etc/systemd/system/service_nomi (service)
+
+/etc/systemd/system/p21projecti.service (service)
+
+
+/etc/nginx/sites-available/p21projecti
+/etc/nginx/sites-enabled/p21projecti
+
 
 systemctl enable service_nomi
 systemctl start service_nomi
@@ -13,6 +27,7 @@ systemctl status service_nomi
 systemctl restart service_nomi
 
 Termius
+
 
 username: root
 password: ${{ secrets.PASSWORD }}
@@ -43,3 +58,7 @@ restart service, nginx
 
 
 ssh -T git@github.com
+
+
+git config --global --list
+git config --list
