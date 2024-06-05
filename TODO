@@ -5,7 +5,12 @@ ssh-keygen -t rsa -b 4096 -C "test@gmail.com"
 ssh-keygen -t ed25519 -a 200 -C "your_email@example.com"
 
 /etc/nginx/sites-enabled (nginx)
-/etc/systemd/system (service)
+/etc/systemd/system/service_nomi (service)
+
+systemctl enable service_nomi
+systemctl start service_nomi
+systemctl status service_nomi
+systemctl restart service_nomi
 
 Termius
 
