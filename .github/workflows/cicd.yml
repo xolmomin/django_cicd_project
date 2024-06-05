@@ -15,7 +15,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
 #        password: ${{ secrets.PASSWORD }}
-        key: ${{ secrets.KALIT123 }}
+        key: ${{ secrets.KEY }}
 #        port: ${{ secrets.PORT }}
         script: |
           cd /var/www/tasks_cicd/project1/backend
