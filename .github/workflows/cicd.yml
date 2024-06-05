@@ -12,9 +12,11 @@ jobs:
     - name: executing remote ssh commands using ssh-key
       uses: appleboy/ssh-action@v0.1.10
       with:
-        host: 146.190.85.59
-        username: root
-        password: ${{ secrets.PASSWORD }}
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+#        password: ${{ secrets.PASSWORD }}
+        key: ${{ secrets.KEY }}
+#        port: ${{ secrets.PORT }}
         script: |
           cd /var/www/tasks_cicd/project1/backend
           git pull
