@@ -4,6 +4,9 @@ ssh-keygen -t rsa -b 4096 -C "test@gmail.com"
 
 ssh-keygen -t ed25519 -a 200 -C "your_email@example.com"
 
+/etc/nginx/sites-enabled (nginx)
+/etc/systemd/system (service)
+
 Termius
 
 username: root
