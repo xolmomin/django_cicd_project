@@ -34,3 +34,4 @@ pip3 install req.txt
 restart service, nginx
 
 
+ssh -T git@github.com
